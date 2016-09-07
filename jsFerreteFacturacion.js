@@ -1,13 +1,16 @@
 var app= angular.module("FerreteFacturacion",[]);
+
 app.controller("controlFacturacion",function($scope){
 
-$scope.datos={};
+		$scope.datos={};
 
-$scope.datos.precioUno="222";
+		$scope.datos.precioUno="222";
 
-$scope.sumar=function(){
+		$scope.sumar=function(){
 
-	alert("sumando");
-};
+			
+
+			alert("sumando");
+		};
 
 });
