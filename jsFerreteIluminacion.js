@@ -54,8 +54,8 @@ $scope.datos.PrecioFinal=$scope.datos.CantidadDeLamparas*35;
 			$scope.datos.PrecioFinal=$scope.datos.PrecioFinal*0.95
 		}
 
-		if($scope.datos.PrecioFinal=$scope.datos.PrecioFinal>120){
-			$scope.datos.PrecioFinal=$scope.datos.PrecioFinal*0.9
+		if($scope.datos.PrecioFinal>120){
+			$scope.datos.PrecioFinal=$scope.datos.PrecioFinal*1.1
 		}
 
 }// fin funcion
