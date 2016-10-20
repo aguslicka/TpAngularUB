@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+		<!--Estilos-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<!--final de Estilos-->
+		<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+		<script>
+  		// Initialize Firebase
+  		var config = {
+    	apiKey: "AIzaSyBXVNddTipsa2BuJfxUQl74xNYtrcAMPQw",
+    	authDomain: "juegos-b9bf7.firebaseapp.com",
+    	databaseURL: "https://juegos-b9bf7.firebaseio.com",
+    	storageBucket: "juegos-b9bf7.appspot.com",
+    	messagingSenderId: "28715019096"
+		  };
+	  	firebase.initializeApp(config);
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="PiedraPapelOTijera.js"></script>
+        <!--Final de Lógica-Programación -->
+
+		
+
+		</head>
+
+
+	<body>
+
+		<body ng-app="PiedraPapelOTijera" ng-controller="ControlPiedraPapelOTijera">
+		<div class="CajaUno animated bounceInDown">
+			
+		
+			<form id="FormIngreso">
+			<input type="text"  placeholder="Ingrese nombre" ng-model="datos.nombre" id="nombre">
+				<center>
+					<img src="imagenes/interrogacion.jpg" >
+				</center>
+				
+			</form>
+			
+		</div>
+		<div class="CajaUno animated bounceInLeft">
+			
+
+			
+			
+			<img class="PiedraPapelTijera animated zoomInRight " src="imagenes/piedra.jpg" ng-click="piedra()">
+			<img class="PiedraPapelTijera animated zoomInUp" src="imagenes/papel.jpg" ng-click="papel()">
+			<img class="PiedraPapelTijera animated zoomInLeft"  src="imagenes/tijera.jpg" ng-click="tijera()">
+			
+			
+
+			
+
+
+		</div>
+
+		<div class="CajaEnunciado animated bounceInLeft">
+			<h2>Enunciado:</h2>
+			
+				<h3>
+						3.	Piedra, Papel o Tijera (v 1.0):
+						</br>Al comenzar el juego generaremos un número RANDOM del 1 al 3 para la selección de la máquina, siendo 1 para “piedra”, el 2 para “papel” y 3 para “tijera”.
+						</br>El jugador seleccionará una imagen correspondiente a su opción  y le informaremos si ganó, empató o perdió
+
+
+				</h3>
+			
+			
+		</div>
+
+		<div class="CajaAbajo animated bounceInUp">
+			<a style=" margin-top: -10%;"  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+		</div>
+	</body>
+</html>
